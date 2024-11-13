@@ -1,0 +1,331 @@
+/* Style général - Réinitialise la marge et le padding, ajuste le box-sizing, et applique une police globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Couleur de fond et couleur de texte de base pour le corps du site */
+body {
+    background-color: #f2f1ec;
+    color: #2c2c2c;
+    line-height: 1.8;
+}
+
+/* Style du conteneur de l'en-tête, avec fond sombre, couleur de texte claire et espacement pour une structure nette */
+header {
+    background-color: #2f2e2c;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du titre principal dans l'en-tête, avec une police et une couleur contrastante */
+header h1 {
+    font-size: 2.4rem;
+    font-family: 'Abril Fatface', cursive;
+    color: #f7d794;
+}
+
+/* Style de la liste de navigation, sans puces et disposée en ligne pour une navigation horizontale */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Espacement entre chaque élément de navigation */
+header nav ul li {
+    margin-left: 1.8rem;
+}
+
+/* Style des liens de navigation, avec une couleur dorée et une police en gras */
+header nav ul li a {
+    color: #f7d794;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effets de survol sur les liens de navigation, avec changement de couleur et léger zoom pour */
+header nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Section Hero - Image de fond pleine largeur avec texte centré */
+#hero {
+    background: url('./images/deer-3275594_1920.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-bottom: 5px solid #f7d794;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bouton principal avec effet de couleur au survol */
+#hero .cta-button {
+    background-color: #f7d794;
+    color: #2f2e2c;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#hero .cta-button:hover {
+    background-color: #d4a373;
+}
+
+/* Style des sections générales pour l'espacement */
+section {
+    padding: 4rem 2rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    transition-delay: 0.2s;
+}
+
+/* Style des titres de sections */
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+/* Galerie de produits */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Carte de produit avec ombrage et bordure */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e0dfda;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Style de l'image de produit avec ajustement de taille et effet au survol */
+.image-placeholder {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.image-placeholder:hover {
+    transform: scale(1.05);
+}
+
+/* Style des cartes produits et éléments de galerie */
+.product-card, .gallery-item {
+    background: #fff;
+    border: 1px solid #e0dfda;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style des éléments de galerie avec image en fond et texte en surimpression */
+.gallery-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Style général du footer */
+footer {
+    background-color: #2f2e2c;
+    color: #f7d794;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Style pour le contenu principal du footer */
+.footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Style pour les liens sociaux */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: #f7d794;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #d4a373;
+}
+
+/* Style pour le bas du footer */
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #d4a373;
+    border-top: 1px solid #d4a373;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+/* Formulaire de contact avec boîte blanche et bordure */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #e0dfda;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #2f2e2c;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #e0dfda;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+form button {
+    display: inline-block;
+    background-color: #f7d794;
+    color: #2f2e2c;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d4a373;
+}
+
+/* Grille pour la galerie d'art - Responsive avec marges et ombres */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+/* Animation fadeInUp pour les sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Cacher l’icône de menu par défaut sur les grands écrans */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #f7d794;
+    cursor: pointer;
+}
+
+/* Media query pour le menu en mobile */
+@media (max-width: 768px) {
+    /* Cache le menu par défaut en version mobile */
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2f2e2c;
+        width: 200px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        z-index: 1000;
+    }
+
+    /* Affiche le menu lorsqu'il est actif */
+    header nav ul.active {
+        display: flex;
+    }
+
+    /* Styles pour le menu en mobile */
+    header nav ul li {
+        margin: 1rem 0; 
+    }
+
+    /* Style pour l'icône hamburger */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1.8rem;
+        color: #f7d794;
+        z-index: 1001; 
+    }
+}
+

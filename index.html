@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop&Art - Maquette Wireframe</title> 
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header - En-tête du site avec le logo et le menu de navigation -->
+    <header>
+        <!-- Icône du menu hamburger pour les écrans mobiles -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1>Pop&Art</h1> <!-- Nom du site en en-tête principal -->
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li> 
+                <li><a href="#gallery">Galerie</a></li> 
+                <li><a href="#products">Produits</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <!-- Ajout de l'icône de menu pour les mobiles -->
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Section Hero - Présentation principale du site avec message de bienvenue et CTA -->
+    <section id="hero">
+        <h2>Bienvenue chez Pop&Art</h2> 
+        <p>Découvrez des objets artisanaux exclusifs inspirés de la pop culture</p> 
+        <a href="#products" class="cta-button">Voir les Produits</a> 
+    </section>
+
+    <!-- Section À propos - Introduction de l'entreprise et de ses valeurs -->
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <div class="about-content">
+            <p>Pop&Art est une entreprise artisanale dédiée aux passionnés de culture populaire et d'art unique. Fondée sur des valeurs de créativité et d'authenticité, Pop&Art propose des objets de collection en édition limitée, fabriqués à la main, qui célèbrent les univers de la pop culture, des mangas aux films iconiques. Chaque pièce, conçue avec soin et souci du détail, vise à offrir aux amateurs d'art une touche originale et exclusive pour sublimer leur espace. Chez Pop&Art, chaque création est bien plus qu'un simple objet : c'est une œuvre d’art qui raconte une histoire.</p>
+            
+        </div>
+    </section>
+
+    <!-- Section Galerie d'art - Présente des exemples d'œuvres dans une grille d'images -->
+    <section id="gallery">
+        <h2>Galerie d’Art</h2> 
+        <p>Découvrez nos collections artistiques et objets uniques.</p>
+        <div class="gallery-grid">
+            <!-- Chaque élément de galerie utilise une image en fond représentant une œuvre -->
+            <div class="gallery-item" style="background-image: url('./images/fruit-4415864_640.jpg');">Œuvre 1</div>
+            <div class="gallery-item" style="background-image: url('./images/man-4448884_640.jpg');">Œuvre 2</div>
+            <div class="gallery-item" style="background-image: url('./images/sculpture-6855055_640.jpg');">Œuvre 3</div>
+        </div>
+    </section>
+
+    <!-- Section Produits - Présentation des produits phares dans une galerie de cartes produits -->
+    <section id="products">
+        <h2>Nos Produits</h2> 
+        <p>Nos objets de collection en édition limitée</p> 
+        <div class="product-gallery">
+            <div class="product-card">
+                <div class="image-placeholder" style="background-image: url('./images/bath-balls-1617472_640.jpg');"></div>
+                <h3>Produit A</h3>
+                <p>Description du produit A.</p>
+            </div>
+            <div class="product-card">
+                <div class="image-placeholder" style="background-image: url('./images/camera-4485481_640.jpg');"></div>
+                <h3>Produit B</h3>
+                <p>Description du produit B.</p>
+            </div>
+            <div class="product-card">
+                <div class="image-placeholder" style="background-image: url('./images/stamps-1145652_640.jpg');"></div>
+                <h3>Produit C</h3>
+                <p>Description du produit C.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact - Formulaire de contact pour permettre aux utilisateurs de communiquer -->
+    <section id="contact">
+        <h2>Contactez-nous</h2> 
+        <form action="#" method="post"> 
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>          
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>          
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button> 
+        </form>
+    </section>
+
+    <!-- Footer - Pied de page avec informations sociales et copyright -->
+    <footer>
+        <p>Suivez-nous sur les réseaux sociaux</p>
+        <div class="social-links">
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> 
+        </div>
+        <p>&copy; 2024 Pop&Art. Tous droits réservés.</p> 
+    </footer>
+</body>
+</html>
